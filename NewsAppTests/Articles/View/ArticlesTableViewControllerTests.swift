@@ -37,5 +37,69 @@ class ArticlesTableViewControllerTests: XCTestCase {
         // Assert
         XCTAssertEqual(1, mockArticlesPresenter.loadArticlesCallCount)
     }
+    
+    func testNumberOfSections() {
+        // Arrange/Act
+        let result = articlesTableViewController.numberOfSections(in: articlesTableViewController.tableView)
+        
+        // Assert
+        XCTAssertEqual(1, result)
+    }
+    
+    func testNumberOfRowsInSection_ArticlesEmpty() {
+        // Arrange/Act
+        let result = articlesTableViewController.tableView(articlesTableViewController.tableView, numberOfRowsInSection: 0)
+        
+        // Assert
+        XCTAssertEqual(0, result)
+    }
+    
+    func testNumberOfRowsInSection_ArticlesNotEmpty() {
+        // Arrange
+        let articles = Articles(articles: [
+            Article(title: "", description: "", url: "", urlToImage: "", publishedAt: "", articleSource: ArticleSource(id: "", name: "")),
+            Article(title: "", description: "", url: "", urlToImage: "", publishedAt: "", articleSource: ArticleSource(id: "", name: "")),
+            Article(title: "", description: "", url: "", urlToImage: "", publishedAt: "", articleSource: ArticleSource(id: "", name: ""))
+        ])
+        
+        articlesTableViewController.articles = articles
+        
+        // Act
+        let result = articlesTableViewController.tableView(articlesTableViewController.tableView, numberOfRowsInSection: 0)
+        
+        // Assert
+        XCTAssertEqual(3, result)
+    }
+    
+    func testDidSelectRowAt() {
+        // Arramge
+        let INDEX_PATH = IndexPath(row: 0, section: 0)
+        let articles = Articles(articles: [
+            Article(title: "", description: "", url: "", urlToImage: "", publishedAt: "", articleSource: ArticleSource(id: "", name: ""))
+        ])
+        
+        articlesTableViewController.articles = articles
+        
+        // Act
+        articlesTableViewController.tableView(articlesTableViewController.tableView, didSelectRowAt: INDEX_PATH)
+        
+        // Assert
+        XCTAssertEqual(1, mockArticlesPresenter.viewArticleCallCount)
+    }
+    
+    func testArticlesPresenterView_DidLoadArticles() {
+        // Arrange
+        let articles = Articles(articles: [
+            Article(title: "", description: "", url: "", urlToImage: "", publishedAt: "", articleSource: ArticleSource(id: "", name: "")),
+            Article(title: "", description: "", url: "", urlToImage: "", publishedAt: "", articleSource: ArticleSource(id: "", name: "")),
+            Article(title: "", description: "", url: "", urlToImage: "", publishedAt: "", articleSource: ArticleSource(id: "", name: ""))
+        ])
+        
+        // Act
+        articlesTableViewController.didLoadArticles(articles)
+        
+        // Assert
+        XCTAssertEqual(3, articles.articles!.count)
+    }
 
 }
