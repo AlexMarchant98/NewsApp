@@ -1,0 +1,180 @@
+{
+    "articles": [
+        {
+            "source": {
+                "id": "the-new-york-times",
+                "name": "The New York Times"
+            },
+            "title": "Hong Kong Protesters Apologize After Chaos at Airport - The New York Times",
+            "description": "After ugly, violent scenes on Tuesday night, demonstrators promised to do better. “We apologize for our behavior but we are just too scared,” one post read.",
+            "url": "https://www.nytimes.com/2019/08/14/world/asia/hong-kong-airport-protests.html",
+            "urlToImage": "https://static01.nyt.com/images/2019/08/14/world/14hongkong-1sub/14hongkong-1sub-facebookJumbo.jpg",
+            "publishedAt": "2019-08-14T06:11:51Z"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Bbc.com"
+            },
+            "title": "Nora Quoirin: Family 'heartbroken' after body found in Malaysia - BBC News",
+            "description": "Nora Quoirin's body was found beside a stream just over a mile from the resort where she was staying.",
+            "url": "https://www.bbc.com/news/uk-england-london-49340903",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/C83C/production/_108306215_f4a63d09-4745-4104-b3ad-546c7a5e5d86.jpg",
+            "publishedAt": "2019-08-14T05:43:57Z"
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "title": "Feds say in court docs that teen threatened agents and had stockpile of weapons and ammo - CNN",
+            "description": "Authorities have arrested an 18-year-old Ohio man who the FBI says threatened to assault federal law enforcement officers in an online post and showed support for mass shootings.",
+            "url": "https://www.cnn.com/2019/08/14/us/ohio-man-firearms-charges/index.html",
+            "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/190117172900-fbi-seal-file-super-tease.jpg",
+            "publishedAt": "2019-08-14T05:39:00Z"
+        },
+        {
+            "source": {
+                "id": "fox-news",
+                "name": "Fox News"
+            },
+            "title": "George Washington mural should be covered but preserved, SF school board decides - Fox News",
+            "description": "The San Francisco school board Tuesday voted 4-3 to cover a controversial 1936 George Washington mural at a local high school that includes images of slavery and a dead Native American.",
+            "url": "https://www.foxnews.com/us/california-school-board-votes-to-preserve-but-cover-1936-high-school-mural-that-shows-slavery-dead-native-american",
+            "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2019/08/AP19225675897802.jpg",
+            "publishedAt": "2019-08-14T04:55:09Z"
+        },
+        {
+            "source": {
+                "id": "nbc-news",
+                "name": "NBC News"
+            },
+            "title": "Investigators looking at whether Jeffrey Epstein's guards may have been sleeping - NBC News",
+            "description": "Investigators haven't reached any conclusions about whether the guards might have been asleep, law enforcement sources told NBC News.",
+            "url": "https://www.nbcnews.com/news/us-news/investigators-looking-whether-jeffrey-epstein-s-guards-may-have-been-n1042116",
+            "urlToImage": "https://media1.s-nbcnews.com/j/newscms/2019_33/2970521/190813-metropolitan-correctional-center-ac-1148p_9bffee8686455bee2670c2482efe5f0e.nbcnews-fp-1200-630.jpg",
+            "publishedAt": "2019-08-14T04:24:00Z"
+        },
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "title": "The crossroads between ethics and technology",
+            "description": "Israel, and its tech business community, must carefully consider the negative ramifications of excelling in technology while disregarding moral and ethical questions.",
+            "url": "http://techcrunch.com/2019/08/06/1846988/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2018/09/GettyImages-112295220.jpg?w=764",
+            "publishedAt": "2019-08-06T20:00:03Z"
+        },
+        {
+            "source": {
+                "id": "fox-news",
+                "name": "Fox News"
+            },
+            "title": "Utah girl, 14, dies during family vacation at Glacier National Park - Fox News",
+            "description": "A 14-year-old girl vacationing with her family at Glacier National Park in Montana was killed Monday when rocks came tumbling down on their moving vehicle.",
+            "url": "https://www.foxnews.com/us/utah-girl-14-dies-during-family-vacation-at-glacier-national-park",
+            "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2019/08/Logan_GNP_091616-cr.jpg",
+            "publishedAt": "2019-08-14T04:05:16Z"
+        },
+        {
+            "source": {
+                "id": "usa-today",
+                "name": "USA Today"
+            },
+            "title": "Immigration official Ken Cuccinelli: Statue of Liberty poem refers to immigrants from Europe - USA TODAY",
+            "description": "The Trump administration's acting U.S. Citizenship and Immigration Services director was criticized Tuesday after creating his own revised version of the famous poem on the Statue of Liberty. At day's end, his effort to explain himself was seized on by Democr…",
+            "url": "https://www.usatoday.com/story/news/politics/2019/08/13/ken-cuccinelli-statue-liberty-poem-refers-migrants-europe/2004455001/",
+            "urlToImage": "https://www.gannett-cdn.com/presto/2019/08/14/USAT/d991bb86-ecbc-4bda-b836-ac1db256f35a-AP_Trump_1.JPG?crop=5471,3078,x0,y0&width=3200&height=1680&fit=bounds",
+            "publishedAt": "2019-08-14T02:54:00Z"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Ufc.com"
+            },
+            "title": "Dana White's Contender Series Week 8 Results - The Official Website of the Ultimate Fighting Championship",
+            "description": null,
+            "url": "https://www.ufc.com/news/dana-whites-contender-series-week-8-results",
+            "urlToImage": "http://dmxg5wxfqgb4u.cloudfront.net/styles/card/s3/2019-07/DWCS-3-3-Thumbnail.jpg?OlTPI_TtRWJnwthQEO41MLNTsJ8i2let&amp;itok=0ui9TkWC",
+            "publishedAt": "2019-08-14T02:41:43Z"
+        },
+        {
+            "source": {
+                "id": "fox-news",
+                "name": "Fox News"
+            },
+            "title": "Placido Domingo concerts canceled as sexual misconduct investigation opened - Fox News",
+            "description": "A once-in-a-lifetime concert has been canceled and an investigation has been opened in the wake of sexual harassment accusations against opera legend Placido Domingo.",
+            "url": "https://www.foxnews.com/entertainment/concerts-cancelled-nationally-sexual-misconduct-investigation-opened-into-placido-domingo",
+            "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2018/09/Placido-Domingo-iTunes.jpg",
+            "publishedAt": "2019-08-14T02:28:15Z"
+        },
+        {
+            "source": {
+                "id": "fox-news",
+                "name": "Fox News"
+            },
+            "title": "Dayton gunman shot 26 people in 32 seconds before police killed him, officials say - Fox News",
+            "description": "The gunman who carried out the Aug. 4 mass shooting in Dayton, Ohio spent nearly two hours in the area before he opened fire, killing nine people and injuring 17 more, according to newly released surveillance footage pieced together from several local busines…",
+            "url": "https://www.foxnews.com/us/dayton-gunman-shot-26-people-32-seconds-police",
+            "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2019/08/AP19220689610941.jpg",
+            "publishedAt": "2019-08-14T01:59:48Z"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Bbc.com"
+            },
+            "title": "Why stress is dangerous - and how to avoid its effects - BBC News",
+            "description": "Are we really more stressed than ever before? Mithu Storoni explains how modern life may have amplified our anxiety, and the best ways to reduce its impact on our bodies and minds",
+            "url": "http://www.bbc.com/future/story/20190813-burnout-anxiety-stress-proof-relief",
+            "urlToImage": "https://ichef.bbci.co.uk/wwfeatures/live/624_351/images/live/p0/7k/jb/p07kjb0m.jpg",
+            "publishedAt": "2019-08-14T00:54:09Z"
+        },
+        {
+            "source": {
+                "id": "cnbc",
+                "name": "CNBC"
+            },
+            "title": "Twitter rolls out a new feature to cut out irrelevant content when users follow a topic - CNBC",
+            "description": "Twitter said it's working on a new feature that will allow users to follow specific topics more easily.",
+            "url": "https://www.cnbc.com/2019/08/13/twitter-feature-cuts-out-irrelevant-content-when-users-follow-a-topic.html",
+            "urlToImage": "https://image.cnbcfm.com/api/v1/image/103260759-GettyImages-472252452.jpg?v=1450805959",
+            "publishedAt": "2019-08-14T00:05:23Z"
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "title": "How 5G technology could be a potential security risk",
+            "description": "CNN's John Avlon explains the national security risk posed by 5G technology from one of its biggest developers, Chinese telecommunications giant Huawei.",
+            "url": "https://www.cnn.com/videos/business/2019/07/23/huawei-cell-phone-avlon-reality-check-newday-vpx.cnn",
+            "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/190719120256-01-huawei-super-tease.jpg",
+            "publishedAt": "2019-07-23T12:29:11Z"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Androidauthority.com"
+            },
+            "title": "Samsung graphene batteries could be on their way soon - Android Authority",
+            "description": "Samsung is reportedly planning to release at least one device with advanced graphene battery technology by the end of 2021.",
+            "url": "https://www.androidauthority.com/samsung-graphene-battery-1018569/",
+            "urlToImage": "https://cdn57.androidauthority.net/wp-content/uploads/2019/06/Samsung-Galaxy-M40-6-920x470.jpg",
+            "publishedAt": "2019-08-14T00:00:24Z"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Spacenews.com"
+            },
+            "title": "Scientists worry about long-term future of NASA's Mars exploration program - SpaceNews",
+            "description": "As NASA gears up a decade-long effort to return samples from Mars, some scientists are worried that the campaign may not leave any money for other missions.",
+            "url": "https://spacenews.com/scientists-worry-about-long-term-future-of-nasas-mars-exploration-program/",
+            "urlToImage": "https://spacenews.com/wp-content/uploads/2015/11/MRO_Mars_radar.jpg",
+            "publishedAt": "2019-08-13T23:02:32Z"
+        }
+    ]
+}
