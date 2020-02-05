@@ -35,26 +35,42 @@
             </objects>
             <point key="canvasLocation" x="632" y="88"/>
         </scene>
-        <!--View Controller-->
+        <!--View Article View Controller-->
         <scene sceneID="Oaz-WO-R3G">
             <objects>
-                <viewController id="eMj-5T-rOG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewArticleViewController" id="eMj-5T-rOG" customClass="ViewArticleViewController" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xw2-mA-ycF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yMn-Xb-Rqt">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="330"/>
-                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Itw-Mj-mUt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ViewArticleCell" id="X9e-Dw-zVa" customClass="ViewArticleCell" customModule="NewsApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X9e-Dw-zVa" id="ZMt-EL-CcJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.97999999999999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="yMn-Xb-Rqt" firstAttribute="leading" secondItem="gh0-s7-B7g" secondAttribute="leading" id="Kov-da-t7s"/>
-                            <constraint firstItem="yMn-Xb-Rqt" firstAttribute="top" secondItem="xw2-mA-ycF" secondAttribute="top" id="iZU-9y-Olz"/>
-                            <constraint firstItem="yMn-Xb-Rqt" firstAttribute="trailing" secondItem="gh0-s7-B7g" secondAttribute="trailing" id="vSb-z9-K5W"/>
+                            <constraint firstItem="Itw-Mj-mUt" firstAttribute="top" secondItem="xw2-mA-ycF" secondAttribute="top" id="1p7-Ne-9VZ"/>
+                            <constraint firstItem="Itw-Mj-mUt" firstAttribute="leading" secondItem="gh0-s7-B7g" secondAttribute="leading" id="JcY-ON-8to"/>
+                            <constraint firstItem="gh0-s7-B7g" firstAttribute="bottom" secondItem="Itw-Mj-mUt" secondAttribute="bottom" id="fVn-B9-Fwc"/>
+                            <constraint firstAttribute="trailing" secondItem="Itw-Mj-mUt" secondAttribute="trailing" id="owB-TG-HST"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gh0-s7-B7g"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Itw-Mj-mUt" id="NFN-Ac-nZd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hmr-Ov-Swk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
