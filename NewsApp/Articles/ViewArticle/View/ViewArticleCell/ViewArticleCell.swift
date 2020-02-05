@@ -62,11 +62,14 @@ class ViewArticleCell: UITableViewCell {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
 
-        let dateObj = dateFormatter.date(from: article.publishedAt!)
+        guard let dateObj = dateFormatter.date(from: article?.publishedAt ?? "") else {
+            self.publishTime.text = "Failed to load publish time"
+            return
+        }
 
         dateFormatter.dateFormat = "dd/MM/yyyy hh:mm"
         
-        self.publishTime.text = dateFormatter.string(from: dateObj!)
+        self.publishTime.text = dateFormatter.string(from: dateObj)
     }
     
 }
