@@ -59,7 +59,15 @@ class ViewArticleCell: UITableViewCell {
         
         self.title.text = article.title
         self.story.text = article.description
-        self.publishTime.text = article.publishedAt
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+
+        let dateObj = dateFormatter.date(from: article.publishedAt!)
+
+        dateFormatter.dateFormat = "dd/MM/yyyy hh:mm"
+        
+        self.publishTime.text = dateFormatter.string(from: dateObj!)
     }
     
 }
