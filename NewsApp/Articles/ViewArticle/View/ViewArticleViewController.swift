@@ -13,15 +13,30 @@ class ViewArticleViewController: UIViewController, Storyboarded {
     var viewArticlePresenter: ViewArticlePresenterProtocol!
     var viewedArticle: Article!
     
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        backButton.layer.cornerRadius = backButton.layer.bounds.height / 2
+        
         tableView.delegate = self
         tableView.dataSource = self
         
         tableView.register(UINib(nibName: Constants.ViewArticleCellNibName, bundle: nil), forCellReuseIdentifier: Constants.ViewArticleCellIdentifier)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
+    }
+    
+    @IBAction func backButtonTapped(sender: Any) {
+        viewArticlePresenter.backButtonTapped()
     }
 
 }

@@ -56,4 +56,8 @@ extension ArticlesCoordinator: ArticlesPresenterDelegate {
 }
 
 extension ArticlesCoordinator: ViewArticlePresenterDelegate {
+    func didTapBack() {
+        self.navigationController.popViewController(animated: true)
+    }
+    
 }

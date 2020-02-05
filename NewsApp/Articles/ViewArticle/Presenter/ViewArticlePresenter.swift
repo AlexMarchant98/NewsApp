@@ -12,6 +12,7 @@ protocol ViewArticlePresenterView {
 }
 
 protocol ViewArticlePresenterDelegate {
+    func didTapBack()
 }
 
 
@@ -25,5 +26,9 @@ class ViewArticlePresenter: ViewArticlePresenterProtocol {
         
         self.view = view
         self.delegate = delegate
+    }
+    
+    func backButtonTapped() {
+        self.delegate.didTapBack()
     }
 }

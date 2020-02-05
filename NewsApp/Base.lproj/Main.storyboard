@@ -58,17 +58,34 @@
                                 </prototypes>
                                 <sections/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lM4-79-oWy">
+                                <rect key="frame" x="16" y="60" width="25" height="25"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="iR4-uX-cDp"/>
+                                    <constraint firstAttribute="height" constant="25" id="xsF-2T-QYy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="chevron.left" catalog="system"/>
+                                <connections>
+                                    <action selector="backButtonTappedWithSender:" destination="eMj-5T-rOG" eventType="touchUpInside" id="Bw0-c7-X6f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.97999999999999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Itw-Mj-mUt" firstAttribute="top" secondItem="xw2-mA-ycF" secondAttribute="top" id="1p7-Ne-9VZ"/>
                             <constraint firstItem="Itw-Mj-mUt" firstAttribute="leading" secondItem="gh0-s7-B7g" secondAttribute="leading" id="JcY-ON-8to"/>
+                            <constraint firstItem="lM4-79-oWy" firstAttribute="leading" secondItem="gh0-s7-B7g" secondAttribute="leading" constant="16" id="dho-G3-w71"/>
                             <constraint firstItem="gh0-s7-B7g" firstAttribute="bottom" secondItem="Itw-Mj-mUt" secondAttribute="bottom" id="fVn-B9-Fwc"/>
+                            <constraint firstItem="lM4-79-oWy" firstAttribute="top" secondItem="gh0-s7-B7g" secondAttribute="top" constant="16" id="m8u-qA-7qM"/>
                             <constraint firstAttribute="trailing" secondItem="Itw-Mj-mUt" secondAttribute="trailing" id="owB-TG-HST"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gh0-s7-B7g"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="lM4-79-oWy" id="wMh-L9-jCR"/>
                         <outlet property="tableView" destination="Itw-Mj-mUt" id="NFN-Ac-nZd"/>
                     </connections>
                 </viewController>
@@ -77,4 +94,7 @@
             <point key="canvasLocation" x="1426.0869565217392" y="87.723214285714278"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="48" height="64"/>
+    </resources>
 </document>
