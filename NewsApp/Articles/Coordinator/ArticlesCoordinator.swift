@@ -39,13 +39,13 @@ class ArticlesCoordinator: Coordinator {
     }
     
     func showArticle(_ article: Article) {
-//        let viewController = ArticleViewcontroller.instantiate()
-//
-//        let articlesPresenter = ArticlePresenter(newsService, with: viewController)
-//
-//        viewController.articlesPresenter = articlesPresenter
-//
-//        self.navigationController.pushViewController(viewController, animated: true)
+        let viewController = ViewArticleViewController.instantiate()
+        let viewArticlePresenter = ViewArticlePresenter(with: viewController, delegate: self)
+
+        viewController.viewArticlePresenter = viewArticlePresenter
+        viewController.viewedArticle = article
+
+        self.navigationController.pushViewController(viewController, animated: true)
     }
 }
 
@@ -53,4 +53,11 @@ extension ArticlesCoordinator: ArticlesPresenterDelegate {
     func didTapArticle(_ article: Article) {
         self.showArticle(article)
     }
+}
+
+extension ArticlesCoordinator: ViewArticlePresenterDelegate {
+    func didTapBack() {
+        self.navigationController.popViewController(animated: true)
+    }
+    
 }

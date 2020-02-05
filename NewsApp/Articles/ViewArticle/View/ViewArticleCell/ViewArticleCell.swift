@@ -1,39 +1,42 @@
 //
-//  ArticleTableViewCell.swift
+//  ViewArticleCell.swift
 //  NewsApp
 //
-//  Created by Alex Marchant on 03/02/2020.
-//  Copyright © 2020 AlexMarchant. All rights reserved.
+//  Created by Alex Marchant on 05/02/2020.
+//  Copyright © 2020 Alex Marchant. All rights reserved.
 //
 
 import UIKit
 
-class ArticleCell: UITableViewCell {
+class ViewArticleCell: UITableViewCell {
     
-    @IBOutlet weak private var articleImage: UIImageView!
-    @IBOutlet weak private var title: UILabel!
-    @IBOutlet weak private var publishedAt: UILabel!
+    @IBOutlet weak var articleImage: UIImageView!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var story: UILabel!
+    @IBOutlet weak var publishTime: UILabel!
     @IBOutlet weak private var activityIndicator: UIActivityIndicatorView!
     
-    public var article: Article? {
+    public var article: Article! {
         didSet {
             self.updateView()
         }
     }
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
     }
     
     func updateView() {
         activityIndicator.startAnimating()
         activityIndicator.isHidden = false
         
-        ImageTransfererService.shared.downloadImage(urlString: article?.urlToImage ?? "") { (imageData) in
+        ImageTransfererService.shared.downloadImage(urlString: article.urlToImage ?? "") { (imageData) in
             
             defer {
                 DispatchQueue.main.async {
@@ -52,19 +55,21 @@ class ArticleCell: UITableViewCell {
             }
             
         }
-        self.title.text = article?.title ?? "Failed to load title"
+        
+        self.title.text = article.title
+        self.story.text = article.description
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
 
         guard let dateObj = dateFormatter.date(from: article?.publishedAt ?? "") else {
-            self.publishedAt.text = "Failed to load publish time"
+            self.publishTime.text = "Failed to load publish time"
             return
         }
 
         dateFormatter.dateFormat = "dd/MM/yyyy hh:mm"
         
-        self.publishedAt.text = dateFormatter.string(from: dateObj)
+        self.publishTime.text = dateFormatter.string(from: dateObj)
     }
     
 }

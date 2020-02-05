@@ -11,4 +11,7 @@ import Foundation
 struct Constants {
     static let ArticleCellIdentifier = "ArticleCell"
     static let ArticleCellNibName = "ArticleCell"
+    
+    static let ViewArticleCellIdentifier = "ViewArticleCell"
+    static let ViewArticleCellNibName = "ViewArticleCell"
 }
