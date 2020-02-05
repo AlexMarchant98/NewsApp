@@ -71,8 +71,36 @@ class ArticlesTableViewControllerTests: XCTestCase {
         XCTAssertEqual(3, result)
     }
     
+    func testCellForRowAt_ArticleIsNull() {
+        // Arrange
+        let INDEX_PATH = IndexPath(row: 0, section: 0)
+        
+        // Act
+        let result = articlesTableViewController.tableView(articlesTableViewController.tableView, cellForRowAt: INDEX_PATH)
+        
+        // Assert
+        XCTAssertTrue(result is ArticleCell)
+    }
+    
+    func testCellForRowAt_ArticleExists() {
+        // Arrange
+        let INDEX_PATH = IndexPath(row: 0, section: 0)
+        let articles = Articles(articles: [
+            Article(title: "", description: "", url: "", urlToImage: "", publishedAt: "", articleSource: ArticleSource(id: "", name: ""))
+        ])
+        
+        articlesTableViewController.articles = articles
+        
+        
+        // Act
+        let result = articlesTableViewController.tableView(articlesTableViewController.tableView, cellForRowAt: INDEX_PATH)
+        
+        // Assert
+        XCTAssertTrue(result is ArticleCell)
+    }
+    
     func testDidSelectRowAt() {
-        // Arramge
+        // Arrange
         let INDEX_PATH = IndexPath(row: 0, section: 0)
         let articles = Articles(articles: [
             Article(title: "", description: "", url: "", urlToImage: "", publishedAt: "", articleSource: ArticleSource(id: "", name: ""))

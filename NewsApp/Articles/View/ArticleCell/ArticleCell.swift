@@ -15,7 +15,7 @@ class ArticleCell: UITableViewCell {
     @IBOutlet weak private var publishedAt: UILabel!
     @IBOutlet weak private var activityIndicator: UIActivityIndicatorView!
     
-    public var article: Article! {
+    public var article: Article? {
         didSet {
             self.updateView()
         }
@@ -33,7 +33,7 @@ class ArticleCell: UITableViewCell {
         activityIndicator.startAnimating()
         activityIndicator.isHidden = false
         
-        ImageTransfererService.shared.downloadImage(urlString: article.urlToImage ?? "") { (imageData) in
+        ImageTransfererService.shared.downloadImage(urlString: article?.urlToImage ?? "") { (imageData) in
             
             defer {
                 DispatchQueue.main.async {
@@ -52,8 +52,8 @@ class ArticleCell: UITableViewCell {
             }
             
         }
-        self.title.text = article.title
-        self.publishedAt.text = article.publishedAt
+        self.title.text = article?.title ?? "Failed to load title"
+        self.publishedAt.text = article?.publishedAt ?? "Failed to load publish time"
     }
     
 }

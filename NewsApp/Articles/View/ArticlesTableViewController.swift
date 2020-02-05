@@ -35,7 +35,7 @@ class ArticlesTableViewController: UITableViewController, Storyboarded {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.ArticleCellIdentifier, for: indexPath) as! ArticleCell
         
-        let article = self.articles!.articles![indexPath.item]
+        let article = self.articles?.articles?[indexPath.item]
         
         cell.article = article
         

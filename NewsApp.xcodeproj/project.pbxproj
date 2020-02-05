@@ -40,6 +40,9 @@
 		D4657D4023E9D18E00B843AF /* MockArticlesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4657D3F23E9D18E00B843AF /* MockArticlesPresenter.swift */; };
 		D4657D4223E9D22A00B843AF /* ArticlesPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4657D4123E9D22A00B843AF /* ArticlesPresenterProtocol.swift */; };
 		D4657D4723E9D4BF00B843AF /* MockObjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4657D4623E9D4BF00B843AF /* MockObjectProtocol.swift */; };
+		D4657D4923EADA0F00B843AF /* MockArticlesPresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4657D4823EADA0F00B843AF /* MockArticlesPresenterView.swift */; };
+		D4657D4B23EADA3E00B843AF /* MockArticlesPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4657D4A23EADA3E00B843AF /* MockArticlesPresenterDelegate.swift */; };
+		D4657D4F23EADAFE00B843AF /* MockNewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4657D4E23EADAFE00B843AF /* MockNewsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +102,9 @@
 		D4657D3F23E9D18E00B843AF /* MockArticlesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockArticlesPresenter.swift; sourceTree = "<group>"; };
 		D4657D4123E9D22A00B843AF /* ArticlesPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesPresenterProtocol.swift; sourceTree = "<group>"; };
 		D4657D4623E9D4BF00B843AF /* MockObjectProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockObjectProtocol.swift; sourceTree = "<group>"; };
+		D4657D4823EADA0F00B843AF /* MockArticlesPresenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockArticlesPresenterView.swift; sourceTree = "<group>"; };
+		D4657D4A23EADA3E00B843AF /* MockArticlesPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockArticlesPresenterDelegate.swift; sourceTree = "<group>"; };
+		D4657D4E23EADAFE00B843AF /* MockNewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +174,7 @@
 		D4657CE023E9BAD200B843AF /* NewsAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				D4657D4C23EADAEA00B843AF /* Services */,
 				D4657D4323E9D4A900B843AF /* Base */,
 				D4657D3223E9CE4000B843AF /* Articles */,
 				D4657CE123E9BAD300B843AF /* NewsAppTests.swift */,
@@ -351,6 +358,8 @@
 			isa = PBXGroup;
 			children = (
 				D4657D3F23E9D18E00B843AF /* MockArticlesPresenter.swift */,
+				D4657D4823EADA0F00B843AF /* MockArticlesPresenterView.swift */,
+				D4657D4A23EADA3E00B843AF /* MockArticlesPresenterDelegate.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -361,6 +370,22 @@
 				D4657D4623E9D4BF00B843AF /* MockObjectProtocol.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		D4657D4C23EADAEA00B843AF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D4657D4D23EADAF000B843AF /* Mocks */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D4657D4D23EADAF000B843AF /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				D4657D4E23EADAFE00B843AF /* MockNewsService.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -524,11 +549,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4657CE223E9BAD300B843AF /* NewsAppTests.swift in Sources */,
+				D4657D4B23EADA3E00B843AF /* MockArticlesPresenterDelegate.swift in Sources */,
 				D4657D4023E9D18E00B843AF /* MockArticlesPresenter.swift in Sources */,
 				D4657D3723E9CE6A00B843AF /* ArticlesCoordinatorTests.swift in Sources */,
 				D4657D3B23E9CE9900B843AF /* ArticlesTableViewControllerUITests.swift in Sources */,
 				D4657D3923E9CE7900B843AF /* ArticlesPresenterTests.swift in Sources */,
 				D4657D3D23E9CF0600B843AF /* ArticlesTableViewControllerTests.swift in Sources */,
+				D4657D4923EADA0F00B843AF /* MockArticlesPresenterView.swift in Sources */,
+				D4657D4F23EADAFE00B843AF /* MockNewsService.swift in Sources */,
 				D4657D4723E9D4BF00B843AF /* MockObjectProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
