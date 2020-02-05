@@ -17,10 +17,10 @@ protocol ArticlesPresenterDelegate {
 }
 
 class ArticlesPresenter: ArticlesPresenterProtocol {
-    var view: ArticlesPresenterView
+    let view: ArticlesPresenterView
+    let delegate: ArticlesPresenterDelegate
     
     let newsService: NewsServiceProtocol
-    let delegate: ArticlesPresenterDelegate
     
     init(
         _ newsService: NewsServiceProtocol,
