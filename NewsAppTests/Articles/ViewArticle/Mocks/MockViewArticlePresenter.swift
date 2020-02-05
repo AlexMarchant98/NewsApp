@@ -10,9 +10,15 @@ import Foundation
 @testable import NewsApp
 
 class MockViewArticlePresenter: MockObjectProtocol, ViewArticlePresenterProtocol {
+
+    var backButtonTappedCallCount = 0
     
     func resetCallCounts() {
-        
+        backButtonTappedCallCount = 0
+    }
+    
+    func backButtonTapped() {
+        backButtonTappedCallCount += 1
     }
     
 }

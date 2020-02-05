@@ -10,7 +10,14 @@ import Foundation
 @testable import NewsApp
 
 class MockViewArticlePresenterDelegate: MockObjectProtocol, ViewArticlePresenterDelegate {
+    
+    var didTapBackCallCount = 0
+    
     func resetCallCounts() {
-        
+        didTapBackCallCount = 0
+    }
+    
+    func didTapBack() {
+        didTapBackCallCount += 1
     }
 }

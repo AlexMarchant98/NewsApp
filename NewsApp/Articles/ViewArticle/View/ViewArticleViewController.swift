@@ -47,7 +47,7 @@ extension ViewArticleViewController: UITableViewDataSource, UITableViewDelegate 
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

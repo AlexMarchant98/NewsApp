@@ -30,5 +30,13 @@ class ViewArticlePresenterTests: XCTestCase {
         mockViewArticlePresenterView = nil
         mockViewArticlePresenterDelegate = nil
     }
+    
+    func testBackButtonTapped() {
+        // Arrange/Act
+        viewArticlePresenter.backButtonTapped()
+        
+        // Assert
+        XCTAssertEqual(1, mockViewArticlePresenterDelegate.didTapBackCallCount)
+    }
 
 }
