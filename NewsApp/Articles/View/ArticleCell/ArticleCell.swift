@@ -53,7 +53,15 @@ class ArticleCell: UITableViewCell {
             
         }
         self.title.text = article?.title ?? "Failed to load title"
-        self.publishedAt.text = article?.publishedAt ?? "Failed to load publish time"
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+
+        let dateObj = dateFormatter.date(from: article?.publishedAt ?? "")
+
+        dateFormatter.dateFormat = "dd/MM/yyyy hh:mm"
+        
+        self.publishedAt.text = dateFormatter.string(from: dateObj!) ?? "Failed to load publish time"
     }
     
 }
